@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta|Roboto');
+html{
+	height: 100%;
+	background: linear-gradient(#E0E0E0, #3080E8);
+}
+
+h1{
+	font-family: Mukta;
+	text-align: center;
+	font-size: 3em;
+}
+
+h2{
+	font-family: Mukta;
+}
+
+h3{
+	font-family: Mukta;
+}
+
+p{
+	background-color: #e29624;
+	font-family: Roboto;
+	padding: 1em;
+	margin-bottom: 2em;
+	border-radius: 25px;
+}
+
+article{
+	width: 35%;
+	float: left;
+	margin-left: 12em;
+}
+
+aside{
+	width: 25%;
+	float: left;
+	margin-left: 12em;
+}
+
+.content{
+	display:table;
+	width: 100%;
+}
+
+
+
+#navlist
+{
+	padding: 3px;
+	margin-left: .5em;
+	border-bottom: 1px solid #778;
+	font: bold 12px Roboto, sans-serif;
+}
+
+#navlist li
+{
+	list-style: none;
+	margin: 0;
+	display: inline;
+}
+
+#navlist li a
+{
+	padding: 3px 0.5em;
+	margin-left: 3px;
+	border: 1px solid #778;
+	border-bottom: none;
+	background: #DDE;
+	text-decoration: none;
+	width: 10em;
+	display: block;
+}
+
+#navlist li a:link 
+{ 
+	color: #448; 
+}
+#navlist li a:visited 
+{ 
+	color: #667; 
+}
+
+#navlist li a:hover
+{
+	color: #000;
+	background: #AAE;
+	border-color: #227;
+}
+
+#navlist li a#current
+{
+	background: white;
+	border-bottom: 1px solid white;
+}
+
+.menu
+{
+	background: transparent;
+	height: 1.3em;
+	width: 10em;
+	overflow: hidden;
+	font-family = Roboto;
+	border: 1px solid gray;
+	border-radius: 25px;
+	float: left;
+	margin: 3em;
+}
+
+.menu:hover
+{
+	height: 8.4em;
+	transition: 1s;
+	background-color: #e29624;
+}
+
+#hoverMenu{
+	list-style:none;
+	text-align: center;
+	font-family: Mukta;
+}
+
+@media screen and (max-width: 480px){
+	content{
+		float: left;
+		clear:left;
+		margin: 0 0 10px;
+		width: 100%;
+	}
+	
+	.menu, article, aside{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#navlist li a{
+		width: 95%;
+		margin: 0;
+		text-align: center;
+	}
+}
